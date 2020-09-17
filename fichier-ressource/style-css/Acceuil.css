@@ -13,6 +13,8 @@ h1 {
 }
 
 .header {
+    /*Régler problème de largeur écran*/
+    /* background-color: rgba(200,000,000,0.3); */
     text-align:center;
     height:auto;
     width:200px;
@@ -23,16 +25,12 @@ h1 {
 
 /*containers-area*/
 .container-1, .container-2, .container-3 {
-    /*Bordure temporaire*/
-    border:1px solid black;
     height:200px;
     width:95%;
     display:flex;
 }
 
 .container-1 > div {
-    /*Bordure temporaire*/
-    border:1px solid black;
     margin-top:0px;
     margin-bottom:0px;
     margin-left:10px;
