@@ -3,12 +3,14 @@
     <head>
         <title>Mon Youtube hors ligne</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="fichier-ressource/style-css/"><!--Page css à rajouter-->
+        <link rel="stylesheet" href="fichier-ressource/style-css/acceuil.css"><!--Page css à rajouter-->
     </head>
 
     <body>
         <header>
-            <h1>Youtube<br/>Hors-ligne</h1>
+            <div class="header">
+                <h1>Youtube<br/>hors-ligne</h1>
+            </div>
         </header>
         <main>
             <article>
@@ -17,38 +19,38 @@
                         <!--<input type="search" id="search"/>-->
                     </div>
                     <div class="first_container_playlist">
-                        <h3>Suggestion</h3>
+                        <h3>Toutes les vidéos</h3>
                         <div class="container-1">
                             <div class="container_1A">
-                                <a href="">
-                                    <img src=""/>
+                                <a href="fichier-ressource/Page-video.html">
+                                    <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_1B">
                                 <a href="">
-                                    <img src=""/>
+                                    <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_1C">
                                 <a href="">
-                                    <img src=""/>
+                                    <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_1D">
                                 <a href="">
-                                    <img src=""/>
+                                    <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section><hr/>
                 <section>
                     <div class="second_container_playlist">
-                        <h3></h3>
+                        <h3>Nightcore</h3>
                         <div class="container-2">
                             <div class="container_2A">
                                 <a href="">
@@ -76,11 +78,71 @@
                             </div>
                         </div>
                     </div>
+                </section><hr/>
+                <section>
+                    <div class="third_container_playlist">
+                        <h3>Opening animé</h3>
+                        <div class="container-3">
+                            <div class="container_3A">
+                                <a href="">
+                                    <img src=""/>
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="container_3B">
+                                <a href="">
+                                    <img src=""/>
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="container_3C">
+                                <a href="">
+                                    <img src=""/>
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="container_3D">
+                                <a href="">
+                                    <img src=""/>
+                                    <p></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
         </main>
         <footer>
 
         </footer>
+        <script src="fichier-ressource/Suggestion-video.js"></script>
+        <script>
+            var clickLien0 = document.querySelectorAll('a')[0];
+            // var clickLien1 = document.querySelectorAll('a')[1];
+            // var clickLien2 = document.querySelectorAll('a')[2];
+            // var clickLien3 = document.querySelectorAll('a')[3];
+            // var clickLien4 = document.querySelectorAll('a')[4];
+            // var clickLien5 = document.querySelectorAll('a')[5];
+            // var clickLien6 = document.querySelectorAll('a')[6];
+            // var clickLien7 = document.querySelectorAll('a')[7];
+
+            clickLien0.addEventListener('click', IdLien);
+
+            //test alert réussi
+            function IdLien(){
+                var idvideo = this.id;
+                if (idvideo == "1A001"){
+                    sourceId = "01";
+                    alert("id = 1A001");
+                }
+                else if (idvideo = "1A002"){
+                    alert("id = 1A002")
+                }
+                else {
+                    alert("alert-code-error-IdLien");
+                }
+            }
+        </script>
+        <script src="fichier-ressource/lien-id.js"></script>
     </body>
 </html>
