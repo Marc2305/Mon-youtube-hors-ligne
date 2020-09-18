@@ -10,15 +10,15 @@
         <header>
             <div class="header">
                 <h1>Youtube<br/>hors-ligne</h1>
-                <input type="button" id="setting"/>
+                <!-- <input type="search" id="search-name"/> -->
+            </div>
+            <div class="search_id">
+                <!-- <input type="search" id="search-id"/>-->
             </div>
         </header>
         <main>
             <article>
                 <section>
-                    <div class="search">
-                        <!--<input type="search" id="search"/>-->
-                    </div>
                     <div class="first_container_playlist">
                         <h3>Toutes les vidéos</h3>
                         <div class="container-1">
@@ -29,19 +29,19 @@
                                 </a>
                             </div>
                             <div class="container_1B">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_1C">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/><br/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_1D">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/><br/>
                                     <p></p>
                                 </a>
@@ -54,25 +54,25 @@
                         <h3>Playlist 1</h3>
                         <div class="container-2">
                             <div class="container_2A">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_2B">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_2C">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_2D">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
@@ -85,25 +85,25 @@
                         <h3>Playlist 2</h3>
                         <div class="container-3">
                             <div class="container_3A">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_3B">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_3C">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
                             </div>
                             <div class="container_3D">
-                                <a href="">
+                                <a href="fichier-ressource/Page-video.html">
                                     <img src=""/>
                                     <p></p>
                                 </a>
@@ -133,11 +133,13 @@
             function IdLien(){
                 var idvideo = this.id;
                 if (idvideo == "1A001"){
+                    Nbv += "1";
                     sourceId = "1";
                     alert("id = 1A001");
                 }
                 else if (idvideo = "1A002"){
-                    alert("id = 1A002")
+                    sourceId = "2";
+                    alert("id = 1A002");
                 }
                 else {
                     alert("alert-code-error-IdLien");

@@ -3,6 +3,15 @@ html {
     font-family:'Times New Roman', Times, serif;
 }
 
+img {
+    height:150px;
+    width:250px;
+}
+
+p {
+    margin-top:5px;
+}
+
 
 /*header-area*/
 h1 {
@@ -25,7 +34,7 @@ h1 {
 
 /*containers-area*/
 .container-1, .container-2, .container-3 {
-    height:200px;
+    height:250px;
     width:95%;
     display:flex;
 }
