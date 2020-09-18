@@ -15,6 +15,17 @@ article {
     flex-direction:row;
 }
 
+img {
+    height:150px;
+    width:250px;
+    padding:15px;
+    float:left;
+}
+
+p {
+    font-size:20px;
+}
+
 .header {
     /*Régler problème de largeur écran*/
     /* background-color: rgba(200,000,000,0.3); */
@@ -24,8 +35,8 @@ article {
 }
 
 .container_after {
-    width:35%;
     border:1px solid black;
+    margin-left:100px;
 }
 
 .container-1 {
@@ -49,6 +60,7 @@ article {
     text-align:center;
 }
 
+/*Area container-suggestion-video*/
 .container_1A, .container_1B, .container_1C, .container_1D, .container_1E, .container_1F {
     /*Bordure temporaire*/
     border:1px solid black;
@@ -58,5 +70,4 @@ article {
     margin-bottom:5px;
     padding-top:5px;
     padding-bottom:5px;
-
 }
