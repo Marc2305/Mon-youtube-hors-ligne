@@ -11,8 +11,7 @@ var V1D = (random(1, 3));
 var V1E = (random(1, 3));
 var V1F = (random(1, 3));
 
-
-var VLienVideo = document.getElementById("cible-video");
+var VLienVideo = document.getElementsByClassName(".video");
 var Vimg0 = document.querySelectorAll("img")[0];
 var Vimg1 = document.querySelectorAll("img")[1];
 var Vimg2 = document.querySelectorAll("img")[2];
@@ -32,7 +31,7 @@ var Vlien3 = document.querySelectorAll("a")[3];
 var Vlien4 = document.querySelectorAll("a")[4];
 var Vlien5 = document.querySelectorAll("a")[5];
 
-    if (VLienVideo.id = "2AA001" || "2AA002" || "2AA003"){
+    if (VLienVideo.id == "2AA001" || VLienVideo.id == "2AA002" || VLienVideo.id == "2AA003"){
         if (V1A = "1"){
             Vimg0.src = "";
             Vtext0.innerHTML = "Texte de la vidéo en suggestion 1";
@@ -40,10 +39,15 @@ var Vlien5 = document.querySelectorAll("a")[5];
             /*Si la vidéo en suggestion est la même que la vidéo 
             diffusé actuellement, la vidéo suggéré changera et 
             passera à la vidéo suivante dans la liste des id*/
-            if (VLienVideo.id = "2AA001"){
+            if (VLienVideo.id == "2AA001"){
                 Vimg0.src = "";
                 Vtext0.innerHTML = "Texte modifié car vidéo identique 1";
                 Vlien0.id = "2AA002";
+            }
+            else {
+                Vimg0.src = "";
+                Vtext0.innerHTML = "Texte de la vidéo en suggestion 1";
+                Vlien0.id = "2AA001";
             }
         }
         else if (V1A = "2"){
@@ -55,6 +59,9 @@ var Vlien5 = document.querySelectorAll("a")[5];
                 Vtext0.innerHTML = "Texte modifié car vidéo identique 2";
                 Vlien0.id = "2AA003";
             }
+            else {
+                
+            }
         }
         else if (V1A = "3"){
             Vimg0.src = "";
@@ -64,6 +71,9 @@ var Vlien5 = document.querySelectorAll("a")[5];
                 Vimg0.src = "";
                 Vtext0.innerHTML = "Texte modifié car vidéo identique 3";
                 Vlien0.id = "2AA004";
+            }
+            else {
+                
             }
         }
         else if (V1A = "4"){

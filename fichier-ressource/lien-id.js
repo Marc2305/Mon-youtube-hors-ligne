@@ -1,40 +1,15 @@
-//Test lien alert : 
-    if (sourceId = "1"){
-        idVideo.src = "photo-audio-video/video/....mp4";
-        TitreVideo.innerHTML = "Titre 1";
+//Test lien alert : ok
+    alert("system-ready");
+
+    if (xId.textContent == "2AA001"){
+        alert("titre1");
     }
-    else if (sourceId = "2"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
+    else if (xId.textContent == "2AA002"){
+        alert("titre2");
     }
-    else if (sourceId = "3"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "4"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "5"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "6"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "7"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "8"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
-    }
-    else if (sourceId = "9"){
-        idVideo.src = "";
-        TitreVideo.innerHTML = "";
+    else if (xId.textContent == "2AA003"){
+        alert("titre3");
     }
     else {
-        alert("alert-erreur-code-lien-id");
+        alert("alert-erreur-xID");
     }

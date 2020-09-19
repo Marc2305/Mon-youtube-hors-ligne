@@ -23,10 +23,10 @@ var img1A = document.querySelectorAll("img")[0];
 var img1B = document.querySelectorAll("img")[1];
 var img1C = document.querySelectorAll("img")[2];
 var img1D = document.querySelectorAll("img")[3];
-var lien1A = document.querySelectorAll("a")[4];
-var lien1B = document.querySelectorAll("a")[5];
-var lien1C = document.querySelectorAll("a")[6];
-var lien1D = document.querySelectorAll("a")[7];
+var lien1A = document.querySelectorAll("a")[0];
+var lien1B = document.querySelectorAll("a")[1];
+var lien1C = document.querySelectorAll("a")[2];
+var lien1D = document.querySelectorAll("a")[3];
 var texte2A = document.querySelectorAll("p")[4];
 var texte2B = document.querySelectorAll("p")[5];
 var texte2C = document.querySelectorAll("p")[6];
@@ -45,17 +45,17 @@ nombre généré par la fonction random*/
     //container_1A
     if (c1A == "1"){
         img1A.src = "";
-        texte1A.innerHTML = "Titre numéro A1";
+        texte1A.innerHTML = "Titre1";
         lien1A.id = "1A001";
     }
     else if (c1A == "2"){
         img1A.src = "";
-        texte1A.innerHTML = "Titre numéro A2";
+        texte1A.innerHTML = "Titre2";
         lien1A.id = "1A002";
     }
     else if (c1A == "3"){
         img1A.src = "";
-        texte1A.innerHTML = "Titre numéro A3";
+        texte1A.innerHTML = "Titre3";
         lien1A.id = "1A003";
     }
     else {
@@ -66,22 +66,17 @@ nombre généré par la fonction random*/
     if (c1B == "1"){
         img1B.src = "";
         texte1B.innerHTML = "Second texte";
-        texte1B.id = "1B001";
+        lien1B.id = "1B001";
     }
     else if (c1B == "2"){
         img1B.src = "";
         texte1B.innerHTML = "deuxième nouveau texte";
-        texte1B.id = "1B002";
+        lien1B.id = "1B002";
     }
     else if (c1B == "3"){
         img1B.src = "";
-        texte1B.innerHTML = "";
-        texte1B.id = "1B003";
-    }
-    else if (c1B == "4"){
-        img1B.src = "";
-        texte1B.innerHTML = "";
-        texte1B.id = "1B004";
+        texte1B.innerHTML = "TexteB3";
+        lien1B.id = "1B003";
     }
     else {
         alert("alert-code-erreur-c1B");
@@ -90,7 +85,7 @@ nombre généré par la fonction random*/
     //container_1C
     if (c1C == "1"){
         img1C.src = "";
-        texte1C.innerHTML = "Second texte";
+        texte1C.innerHTML = "Troisième texte";
         texte1C.id = "1C001";
     }
     else if (c1C == "2"){
@@ -102,16 +97,6 @@ nombre généré par la fonction random*/
         img1C.src = "";
         texte1C.innerHTML = "";
         texte1C.id = "1C003";
-    }
-    else if (c1C == "4"){
-        img1C.src = "";
-        texte1C.innerHTML = "";
-        texte1C.id = "1C004";
-    }
-    else if (c1D == "5"){
-        img1C.src = "";
-        texte1C.innerHTML = "";
-        texte1C.id = "1D005";
     }
     else {
         alert("alert-code-erreur-c1C");
@@ -133,26 +118,6 @@ nombre généré par la fonction random*/
         texte1D.innerHTML = "";
         texte1D.id = "1D003";
     }
-    else if (c1D == "4"){
-        img1D.src = "";
-        texte1D.innerHTML = "";
-        texte1D.id = "1D004";
-    }
-    else if (c1D == "5"){
-        img1D.src = "";
-        texte1D.innerHTML = "";
-        texte1D.id = "1D005";
-    }
-    else if (c1D == "6"){
-        img1D.src = "";
-        texte1D.innerHTML = "";
-        texte1D.id = "1D006";
-    }
-    else if (c1D == "7"){
-        img1D.src = "";
-        texte1D.innerHTML = "";
-        texte1D.id = "1D007";
-    }
     else {
         alert("alert-code-erreur-c1D");
     }
@@ -168,12 +133,12 @@ nombre généré par la fonction random*/
     }
     else if (c2A == "2"){
         img2A.src = "";
-        texte2A.innerHTML = "Titre numéro A2";
+        texte2A.innerHTML = "Titre numéro B2";
         lien2A.id = "1A002";
     }
     else if (c2A == "3"){
         img2A.src = "";
-        texte2A.innerHTML = "Titre numéro A3";
+        texte2A.innerHTML = "Titre numéro B3";
         lien1A.id = "1A003";
     }
     else {
@@ -196,11 +161,6 @@ nombre généré par la fonction random*/
         texte2B.innerHTML = "";
         lien2B.id = "1B003";
     }
-    else if (c2B == "4"){
-        img2B.src = "";
-        texte2B.innerHTML = "";
-        lien2B.id = "1B004";
-    }
     else {
         alert("alert-code-erreur-c1B");
     }
@@ -221,16 +181,6 @@ nombre généré par la fonction random*/
         texte2C.innerHTML = "";
         lien2C.id = "1C003";
     }
-    else if (c2C == "4"){
-        img2C.src = "";
-        texte2C.innerHTML = "";
-        lien2C.id = "1C004";
-    }
-    else if (c2D == "5"){
-        img2C.src = "";
-        texte2C.innerHTML = "";
-        lien2C.id = "1D005";
-    }
     else {
         alert("alert-code-erreur-c1C");
     }
@@ -250,26 +200,6 @@ nombre généré par la fonction random*/
         img2D.src = "";
         texte2D.innerHTML = "";
         lien2D.id = "1D003";
-    }
-    else if (c2D == "4"){
-        img2D.src = "";
-        texte2D.innerHTML = "";
-        lien2D.id = "1D004";
-    }
-    else if (c2D == "5"){
-        img2D.src = "";
-        texte2D.innerHTML = "";
-        lien2D.id = "1D005";
-    }
-    else if (c2D == "6"){
-        img2D.src = "";
-        texte2D.innerHTML = "";
-        lien2D.id = "1D006";
-    }
-    else if (c2D == "7"){
-        img2D.src = "";
-        texte2D.innerHTML = "";
-        lien2D.id = "1D007";
     }
     else {
         alert("alert-code-erreur-c1D");

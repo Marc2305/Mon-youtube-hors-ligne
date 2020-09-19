@@ -118,28 +118,32 @@
         </footer>
         <script src="fichier-ressource/Suggestion-video.js"></script>
         <script>
-            var clickLien0 = document.querySelectorAll('a')[0];
-            // var clickLien1 = document.querySelectorAll('a')[1];
-            // var clickLien2 = document.querySelectorAll('a')[2];
-            // var clickLien3 = document.querySelectorAll('a')[3];
-            // var clickLien4 = document.querySelectorAll('a')[4];
-            // var clickLien5 = document.querySelectorAll('a')[5];
-            // var clickLien6 = document.querySelectorAll('a')[6];
-            // var clickLien7 = document.querySelectorAll('a')[7];
+            var xId = "";
+            var lien1A = document.querySelectorAll('a')[0];
+            // var lien1B = document.querySelectorAll('a')[1];
+            // var lien1C = document.querySelectorAll('a')[2];
+            // var lien1D = document.querySelectorAll('a')[3];
+            // var lien2A = document.querySelectorAll('a')[4];
+            // var lien2B = document.querySelectorAll('a')[5];
+            // var lien2C = document.querySelectorAll('a')[6];
+            // var lien2D = document.querySelectorAll('a')[7];
 
-            clickLien0.addEventListener('click', IdLien);
+            lien1A.addEventListener("click", IdLien0);
 
             //test alert réussi
-            function IdLien(){
-                var idvideo = this.id;
-                if (idvideo == "1A001"){
-                    Nbv += "1";
-                    sourceId = "1";
-                    alert("id = 1A001");
+            //Nouveau test alert échec
+            function IdLien0(){
+                if (lien1A.id == "1A001"){
+                    xId = "2AA001";
+                    alert("id = 1A001" + "\n" + xId);
                 }
-                else if (idvideo = "1A002"){
-                    sourceId = "2";
-                    alert("id = 1A002");
+                else if (lien1A.id == "1A002"){
+                    xId = "2AA002";
+                    alert("id = 1A002" + "\n" + xId);
+                }
+                else if (lien1A.id == "1A003"){
+                    xId = "2AA003";
+                    alert("id = 1A003" + "\n" + xId);
                 }
                 else {
                     alert("alert-code-error-IdLien");
